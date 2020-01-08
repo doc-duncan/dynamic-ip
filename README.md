@@ -1,5 +1,3 @@
-# dynamic-ip
-
 ## Overview
 
 This service monitors the current public IP of the machine it is running on. It keeps an updated IP record
