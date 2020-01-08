@@ -2,6 +2,9 @@ import boto3
 import json
 from requests import get
 
+# TODO extract bucket name and key to env vars
+# TODO run on cron or continuously
+
 s3_client = boto3.client('s3')
 ip_output_object = {}
 
