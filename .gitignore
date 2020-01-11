@@ -6,3 +6,6 @@ env.list
 
 # common commands for reference
 commands.txt
+
+# user
+.aws/
