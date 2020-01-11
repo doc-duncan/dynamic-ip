@@ -3,7 +3,12 @@ import json
 import os
 from requests import get
 
+# TODO pass in s3 properties : DONE
 # TODO run on cron or continuously
+# TODO perform retry if no internet connection
+# TODO run operation under stricter AWS permissions
+# TODO run as api through api gateway
+# TODO put machine id on payload
 
 s3_client = boto3.client('s3')
 ip_output_object = {}
