@@ -10,4 +10,4 @@ This way I am always able to connect even if my ISP allocates a new IP for my ro
 ## Notes
 
 - credentials must be mounted in container with access to bucket
-- env vars must be set to include S3_BUCKET_NAME and S3_FILE_NAME
+- env vars must be set to include AWS_SHARED_CREDENTIALS_FILE, S3_BUCKET_NAME, S3_FILE_NAME and DEVICE_IDENTIFIER
