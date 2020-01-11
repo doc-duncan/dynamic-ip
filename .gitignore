@@ -1,2 +1,8 @@
 # vs code directory
 .vscode/
+
+# env settings specific to deployment
+env.list
+
+# common commands for reference
+commands.txt
