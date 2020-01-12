@@ -4,4 +4,4 @@ WORKDIR /usr/apps/dynamic-ip
 COPY . .
 RUN pip install -r requirements.txt
 
-CMD ["python", "./src/request-ip.py"]
+CMD ["python", "request-ip.py"]
