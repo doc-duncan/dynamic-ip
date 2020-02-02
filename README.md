@@ -11,6 +11,7 @@ This service fetches and reports the current public IP of the machine it is runn
     - Example output: {"public-ip-address": "0.0.0.0", "device-identifier": "my-pc"}
 
     **Required Environment Vars**
+    
     | ENV Var Name      | Description                                                                              |
     | ----------------- | ---------------------------------------------------------------------------------------- |
     | S3_BUCKET_NAME    | Target AWS S3 bucket name for public IP file to land                                     |
@@ -22,6 +23,7 @@ This service fetches and reports the current public IP of the machine it is runn
     - All input parms should match the environment variables set at runtime to retrieve the corresponding IP info.
 
     **Required Input Parms**
+    
     | Parm name         | Description |
     | ----------------- | ---------------------------------------------------------------------------------------- |
     | S3_BUCKET_NAME    | Target AWS S3 bucket name holding the IP file                                            |
