@@ -9,3 +9,7 @@ commands.txt
 
 # user
 .aws/
+
+# lambda zip and output
+function.zip
+response.json
