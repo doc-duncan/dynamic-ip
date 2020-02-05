@@ -13,3 +13,7 @@ commands.txt
 # lambda zip and output
 function.zip
 response.json
+
+# terraform state
+.terraform*
+terraform.tfstate*
