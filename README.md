@@ -19,9 +19,7 @@ The components of this project are described in detail below.
     
     | ENV Var Name      | Description                                                           |
     | ----------------- | --------------------------------------------------------------------- |
-    | S3_BUCKET_NAME    | Target S3 bucket name for public IP object to land                    |
-    | S3_BASE_FILE_NAME | Concatenated with DEVICE_IDENTIFIER to create S3 object key           |
-    | DEVICE_IDENTIFIER | Uniquer identifier of the machine corresponding to the public IP      | 
+    | DEVICE_IDENTIFIER | Unique identifier of the machine corresponding to the public IP, this will be the name of the output file  | 
 
 2. dynamic-ip-query-lambda
     - The lambda function used to query IP output in S3 that was pushed by the worker-container
@@ -31,9 +29,7 @@ The components of this project are described in detail below.
     
     | Parm name         | Description                                                                         |
     | ----------------- | ----------------------------------------------------------------------------------- |
-    | S3_BUCKET_NAME    | Target S3 bucket name holding the desired IP object                                 |
-    | S3_BASE_FILE_NAME | Concatenated with DEVICE_IDENTIFIER to create desired S3 object key                 |
-    | DEVICE_IDENTIFIER | Unique identifier of the desired machine                                            |
+    | DEVICE_IDENTIFIER | Unique identifier of the machine corresponding to the public IP, this will be the name of the output file  | 
 
 ## Terraform
 
