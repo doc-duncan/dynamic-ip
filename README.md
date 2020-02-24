@@ -11,7 +11,7 @@ The components of this project are described in detail below.
 1. worker-container
     - The container running the dynamic-ip application that fetches the public IP and pushes it to S3
     - Fetches public IP using Python requests and the endpoint https://api.ipify.org
-    - Pushes public IP to a given AWS S3 bucket with a file name that is composed of the given device identifier and base file name
+    - Pushes public IP to an AWS S3 bucket with a file name that represents the given device identifier
 
     - Example output: {"public-ip-address": "0.0.0.0", "device-identifier": "my-pc"}
 
@@ -29,7 +29,7 @@ The components of this project are described in detail below.
     
     | Parm name         | Description                                                                         |
     | ----------------- | ----------------------------------------------------------------------------------- |
-    | DEVICE_IDENTIFIER | Unique identifier of the machine corresponding to the public IP, this will be the name of the output file  | 
+    | DEVICE_IDENTIFIER | Unique identifier of the machine corresponding to the desired public IP | 
 
 ## Terraform
 
@@ -43,6 +43,8 @@ The following services are all created using the terraform in the terraform dir.
     - dynamic-ip-query-lambda-policy
 4. policy_attachments (policy -> role):
     - dyanmci-ip-query-lambda-policy -> dynamic-ip-query-lambda
+5. api_gateway (and corresponding resources)
+    - dynamic-ip-query-api
 
 ## Key Points
 1. AWS credentials must be mounted in the running container with access to the output bucket for execution to succeed
